@@ -16,9 +16,7 @@ likePokemon = () => {
   })
 }
 
-componentDidUpdate(){
-  this.likePokemon
-}
+
     
       render() {
         return (
@@ -34,8 +32,8 @@ componentDidUpdate(){
               </Card.Description>
             </Card.Content>
             <Card.Content extra>
-              <a>
-                <Icon name='thumbs up icon' onClick={this.likePokemon} />
+              <a onClick={this.likePokemon} >
+                <Icon name='thumbs up icon'/>
                 Likes:{this.props.pokemon.likes}
               </a>
               <div class="ui bottom attached button" onClick={() => this.props.addPokemon(this.props.pokemon)} >
